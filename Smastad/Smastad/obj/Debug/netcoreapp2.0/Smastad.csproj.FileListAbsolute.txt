@@ -1,0 +1,4 @@
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.0\Smastad.csprojResolveAssemblyReference.cache
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.0\Smastad.csproj.CoreCompileInputs.cache
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.0\Smastad.AssemblyInfoInputs.cache
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.0\Smastad.AssemblyInfo.cs
