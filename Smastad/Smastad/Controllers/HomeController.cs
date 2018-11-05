@@ -31,9 +31,16 @@ namespace Smastad.Controllers
     }
 
     [HttpPost]
-    public ViewResult NewErrand (Errand errand)
+    public ViewResult Index (Errand errand)
     {
-      return View(errand);
+      if (ModelState.IsValid)
+      {
+        return View("Errand", errand);
+      } else
+      {
+        return View();
+      }
+      
     }
 
   }

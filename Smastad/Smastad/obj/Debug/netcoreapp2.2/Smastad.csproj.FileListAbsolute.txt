@@ -42,3 +42,4 @@ C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.View
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.dll
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.pdb
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csproj.CopyComplete
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csprojResolveAssemblyReference.cache

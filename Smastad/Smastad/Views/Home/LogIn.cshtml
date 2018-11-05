@@ -8,12 +8,14 @@
         <p class="info">En säker tjänst från Småstads IT-avdelning</p>
 
         <form method="post" action="coordinator/startCoordinator.html">
+            <div asp-validation-summary="All" class="error"></div>
             <p>
                 <input type="hidden" name="isSubmitted" value="true" />
             </p>
             <p>
                 <span class="label">Användarnamn:</span><br />
                 <input asp-for="EmployeeId" />
+                <span asp-validation-for="EmployeeId" class="error"></span>
             </p>
             <p>
                 <span class="label">Lösenord:</span><br />
@@ -21,7 +23,7 @@
             </p>
             <p>
                 <!--Dessa länkar ska sedan tas bort då det är meningen att vid kontrollen av inloggningsuppgifter så hämtas rätt sida-->
-                <a class="button" asp-controller="Coordinator" asp-action="coordinator" >Inloggning av samordnare</a><br />
+                <a class="button" asp-controller="Coordinator" asp-action="coordinator">Inloggning av samordnare</a><br />
                 <a class="button" asp-controller="Manager" asp-action="manager">Inloggning av chefer</a><br />
                 <a class="button" asp-controller="Investigator" asp-action="investigator">Inloggning av handläggare</a>
             </p>
