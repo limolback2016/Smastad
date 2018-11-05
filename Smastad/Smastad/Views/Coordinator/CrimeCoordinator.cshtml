@@ -1,5 +1,6 @@
 ﻿@{
 }
+@model Errand
 
 <div id="content">
     <h2>Detaljer för ärendet</h2>
@@ -69,7 +70,7 @@
         <h3>Redigera ärende</h3>
         <p>
             Ange enhet:
-            <select name="department">
+            <select asp-for="DepartmentId">
                 <option selected="selected">Välj</option>
                 <option value="unit0">Småstads Kommun</option>
                 <option value="unit1">Tekniska Avloppshantering</option>

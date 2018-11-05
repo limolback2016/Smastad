@@ -29,5 +29,12 @@ namespace Smastad.Controllers
     {
       return View();
     }
+
+    [HttpPost]
+    public ViewResult NewErrand (Errand errand)
+    {
+      return View(errand);
+    }
+
   }
 }

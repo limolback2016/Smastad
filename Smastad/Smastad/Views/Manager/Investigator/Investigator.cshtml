@@ -1,5 +1,6 @@
 ﻿@{
 }
+@model Errand
 
 <div id="content">
     <h2>Ärenden</h2>
@@ -14,7 +15,7 @@
         </tr>
         <tr>
             <td>
-                <select name="status">
+                <select asp-for="StatusId">
                     <option selected="selected">Välj alla</option>
                     <option value="stat0">Inrapporterad</option>
                     <option value="stat1">Ingen åtgärd</option>
@@ -23,7 +24,7 @@
                 </select>
             </td>
             <td><input class="button" type="submit" value="Hämta lista" /></td>
-            <td><input name="casenumber" /></td>
+            <td><input asp-for="ErrandId" /></td>
             <td><input class="button" type="submit" value="Sök" /></td>
         </tr>
     </table>

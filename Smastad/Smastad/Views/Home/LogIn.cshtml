@@ -1,5 +1,6 @@
 ﻿@{
 }
+@model Employee
 
 <div id="content">
     <section id="mainColumn">
@@ -12,7 +13,7 @@
             </p>
             <p>
                 <span class="label">Användarnamn:</span><br />
-                <input type="text" name="user" />
+                <input asp-for="EmployeeId" />
             </p>
             <p>
                 <span class="label">Lösenord:</span><br />
@@ -20,7 +21,7 @@
             </p>
             <p>
                 <!--Dessa länkar ska sedan tas bort då det är meningen att vid kontrollen av inloggningsuppgifter så hämtas rätt sida-->
-                <a class="button" asp-controller="Coordinator" asp-action="coordinator">Inloggning av samordnare</a><br />
+                <a class="button" asp-controller="Coordinator" asp-action="coordinator" >Inloggning av samordnare</a><br />
                 <a class="button" asp-controller="Manager" asp-action="manager">Inloggning av chefer</a><br />
                 <a class="button" asp-controller="Investigator" asp-action="investigator">Inloggning av handläggare</a>
             </p>

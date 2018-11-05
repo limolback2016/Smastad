@@ -1,5 +1,6 @@
 ﻿@{
 }
+@model Errand
 
 <div id="content">
     <h2>Detaljer för ärendet</h2>
@@ -70,7 +71,7 @@
         <h3>Redigera ärende</h3>
         <p>
             Ange handläggare:
-            <select name="investigator">
+            <select asp-for="EmployeeId">
                 <option selected="selected">Välj</option>
                 <option value="inv1">Ada Bengtsson</option>
                 <option value="inv2">Bengt Cederström</option>

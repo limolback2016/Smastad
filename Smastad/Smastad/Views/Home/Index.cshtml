@@ -1,5 +1,6 @@
 ﻿@{
 }
+@model Errand
 
 <div id="content">
     <section id="mainColumn">
@@ -14,27 +15,27 @@
             </p>
             <p>
                 <span class="label">Var har brottet skett någonstans?</span><br />
-                <input type="text" name="place" /> *
+                <input asp-for="Place" /> *
             </p>
             <p>
                 <span class="label">Vilken typ av brott?</span><br />
-                <input type="text" name="crime" /> *
+                <input asp-for="TypeOfCrime" /> *
             </p>
             <p>
                 <span class="label">När skedde brottet?</span><br />
-                <input type="text" name="crimeDate" /> *
+                <input asp-for="DateOfObservation" /> *
             </p>
             <p>
                 <span class="label">Ditt namn (för- och efternamn):</span><br />
-                <input type="text" name="informersName" /> *
+                <input asp-for="InformerName" /> *
             </p>
             <p>
                 <span class="label">Din telefon:</span><br />
-                <input type="text" name="phone" /> *
+                <input asp-for="InformerPhone" /> *
             </p>
             <p>
                 <span class="label">Beskriv din observation<br /> (ex. namn på misstänkt person):</span><br />
-                <textarea name="observation" rows="5" cols="16"></textarea>
+                <textarea asp-for="Observation" rows="5" cols="16"></textarea>
             </p>
             <p>
                 <input class="button" value="Skicka in" onclick="location.href='@Url.Action("validate", "Citizen")'" />
