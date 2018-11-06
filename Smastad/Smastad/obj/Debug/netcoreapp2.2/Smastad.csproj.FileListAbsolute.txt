@@ -40,7 +40,7 @@ C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.View
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.dll
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.pdb
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csproj.CopyComplete
-C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csprojResolveAssemblyReference.cache
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Investigator\CrimeInvestigator.g.cshtml.cs
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Investigator\Investigator.g.cshtml.cs
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Home\ReadCookies.g.cshtml.cs
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csprojAssemblyReference.cache
