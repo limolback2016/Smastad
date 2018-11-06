@@ -43,3 +43,4 @@ C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.cspr
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Smastad.csprojResolveAssemblyReference.cache
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Investigator\CrimeInvestigator.g.cshtml.cs
 C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Investigator\Investigator.g.cshtml.cs
+C:\Users\Familj\git\Smastad\Smastad\Smastad\obj\Debug\netcoreapp2.2\Razor\Views\Home\ReadCookies.g.cshtml.cs
