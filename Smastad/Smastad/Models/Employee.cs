@@ -10,7 +10,6 @@ namespace Smastad.Models
     [Table("Employee")]
     public class Employee
     {
-      [Key]
       public string EmployeeId { get; set; }
 
       [Column("EmployeeName", TypeName = "ntext")]
