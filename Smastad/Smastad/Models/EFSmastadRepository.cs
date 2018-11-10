@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace Smastad.Models
 {
-  public class EFSmastadRepository  //fake repo for using faked data
-  {
+public class EFSmastadRepository  //fake repo for using faked data
+{
     private ApplicationDbContext context;
 
     public EFSmastadRepository(ApplicationDbContext ctx)
     {
-      context = ctx;
+        context = ctx;
     }
 
     public IQueryable<Employee> Employees => context.Employees;
@@ -31,11 +31,68 @@ namespace Smastad.Models
     //Hämta ut department uppgifter
     public Task<Department> GetDepartment(int id)
     {
-      return Task.Run(() =>
-      {
-        var departmentDetail = Departments.Where(td => td.DepartmentId.Equals(id)).First();
-        return departmentDetail;
-      });
+        return Task.Run(() =>
+        {
+            var departmentDetail = Departments.Where(td => td.DepartmentId.Equals(id)).First();
+            return departmentDetail;
+        });
     }
-  }
+    
+    //Hämta ut Employee uppgifter
+    public Task<Employee> GetEmployee(int id)
+    {
+        return Task.Run(() =>
+        {
+            var employeeDetail = Employees.Where(td => td.EmployeeId.Equals(id)).First();
+                return employeeDetail;
+        });
+    }
+
+    public Task<Errand> GetErrand(int id)
+    {
+        return Task.Run(() =>
+        {
+            var errandDetail = Errands.Where(td => td.ErrandId.Equals(id)).First();
+            return errandDetail;
+        });
+    }
+
+    public Task<ErrandStatus> GetErrandStatus(int id)
+    {
+        return Task.Run(() =>
+        {
+            var errandStatusDetail = ErrandStatuses.Where(td => td.StatusId.Equals(id)).First();
+            return errandStatusDetail;
+        });
+    }
+
+    public Task<Picture> GetPicture(int id)
+    {
+        return Task.Run(() =>
+        {
+            var pictureDetail = Pictures.Where(td => td.PictureId.Equals(id)).First();
+            return pictureDetail;
+        });
+    }
+
+    public Task<Sample> GetSample(int id)
+    {
+        return Task.Run(() =>
+        {
+            var sampleDetail = Samples.Where(td => td.SampleId.Equals(id)).First();
+            return sampleDetail;
+        });
+    }
+    
+    public Task<Sequence> GetSequence(int id)
+    {
+        return Task.Run(() =>
+        {
+            var sequenceDetail = Sequences.Where(td => td.Id.Equals(id)).First();
+            return sequenceDetail;
+        });
+    }
+     
 }
+}
+
