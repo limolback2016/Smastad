@@ -1,4 +1,5 @@
 ﻿@{
+    Layout = "~/Views/Shared/_BasicLayout.cshtml";
 }
 @model Errand
 
@@ -39,12 +40,13 @@
                 <textarea asp-for="Observation" rows="5" cols="16"></textarea>
             </p>
             <p>
-                <input class="button" type="submit" value="Skicka in"/>
+                <input class="button" type="submit" value="Skicka in" />
             </p>
         </form>
     </section><!-- End Left -->
 
-    <section><!-- Add Cookie part-->
+    <section>
+        <!-- Add Cookie part-->
         <h1>Specify your preferences :</h1>
         <form asp-controller="Home" asp-action="WriteCookies">
             <select name="setting">
