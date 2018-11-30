@@ -13,10 +13,10 @@ namespace Smastad
     {
       //CreateWebHostBuilder(args).Build().Run();
 
-            var host = CreateWebHostBuilder(args);
+            var host = CreateWebHost(args);
 
            // using (var scope = host.Services.CreateScope())
-            using (var scope = host.Build().Services.CreateScope())
+            using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 try
@@ -30,11 +30,18 @@ namespace Smastad
                     logger.LogError(ex, "An error occurred while seeding the database.");
                 }
             }
-            host.Build().Run();
+            host.Run();
     }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+/*        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
         WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>();
+*/
+        public static IWebHost CreateWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+            .UseDefaultServiceProvider(options =>
+                options.ValidateScopes = false)
+            .Build();
   }
 }
