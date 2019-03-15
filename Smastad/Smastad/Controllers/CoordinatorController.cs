@@ -12,6 +12,7 @@ namespace Smastad.Controllers
   {
     public IActionResult coordinator()
     {
+            
       return View();
     }
 

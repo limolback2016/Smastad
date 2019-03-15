@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
+    "",
     "\\Smastad",
-    "\\Smastad\\Smastad\\wwwroot\\css"
+    "\\Smastad\\Smastad",
+    "\\Smastad\\Smastad\\Models"
   ],
+  "SelectedNode": "\\Smastad\\Smastad\\Smastad.csproj",
   "PreviewInSolutionExplorer": false
 }
